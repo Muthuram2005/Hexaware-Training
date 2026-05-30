@@ -71,10 +71,7 @@ db.restaurants.find({"contact.email":null})
 
 // 21
 db.restaurants.find({
-$or:[
-{"contact.phone":null},
-{"contact.email":null}
-]
+$or:[ {"contact.phone":null}, {"contact.email":null} ]
 })
 
 // 22
@@ -102,14 +99,12 @@ db.restaurants.find().sort({avg_order_value:-1}).limit(2)
 
 // 29
 db.restaurants.updateOne(
-{name:"Burger Street"},
-{$set:{rating:4.0}}
+{name:"Burger Street"}, {$set:{rating:4.0}}
 )
 
 // 30
 db.restaurants.updateOne(
-{name:"Tea Tales"},
-{$set:{delivery_available:true}}
+{name:"Tea Tales"}, {$set:{delivery_available:true}}
 )
 
 // 31
@@ -120,8 +115,7 @@ db.restaurants.updateMany(
 
 // 32
 db.restaurants.updateOne(
-{name:"Spice Hub"},
-{$push:{tags:"popular"}}
+{name:"Spice Hub"}, {$push:{tags:"popular"}}
 )
 
 // 33
@@ -131,22 +125,16 @@ db.restaurants.updateMany(
 )
 
 // 34
-db.restaurants.deleteOne(
-{restaurant_id:6}
-)
+db.restaurants.deleteOne({restaurant_id:6})
 
 // 35
-db.restaurants.deleteMany(
-{rating:{$lt:4.0}}
-)
+db.restaurants.deleteMany({rating:{$lt:4.0}})
 
 // 36
 db.restaurants.countDocuments()
 
 // 37
-db.restaurants.countDocuments({
-delivery_available:true
-})
+db.restaurants.countDocuments({delivery_available:true})
 
 // 38
 db.restaurants.distinct("city")
@@ -156,71 +144,45 @@ db.restaurants.distinct("cuisine")
 
 // 40
 db.restaurants.aggregate([
-{
-$group:{
-_id:"$city",
-count:{$sum:1}
-}
+{ 
+  $group:{_id:"$city", count:{$sum:1}}
 }
 ])
 
 // 41
 db.restaurants.aggregate([
 {
-$group:{
-_id:"$cuisine",
-count:{$sum:1}
-}
+$group:{_id:"$cuisine", count:{$sum:1}}
 }
 ])
 
 // 42
 db.restaurants.aggregate([
 {
-$group:{
-_id:"$cuisine",
-avgRating:{$avg:"$rating"}
-}
+$group:{_id:"$cuisine", avgRating:{$avg:"$rating"}}
 }
 ])
 
 // 43
 db.restaurants.aggregate([
 {
-$group:{
-_id:"$city",
-avgOrderValue:{$avg:"$avg_order_value"}
-}
+$group:{_id:"$city", avgOrderValue:{$avg:"$avg_order_value"}}
 }
 ])
 
 // 44
 db.restaurants.aggregate([
 {
-$group:{
-_id:"$cuisine",
-avgOrderValue:{$avg:"$avg_order_value"}
-}
+$group:{_id:"$cuisine",avgOrderValue:{$avg:"$avg_order_value"}}
 },
-{
-$sort:{avgOrderValue:-1}
-},
-{
-$limit:1
-}
+{$sort:{avgOrderValue:-1}},
+{$limit:1}
 ])
 
 // 45
 db.restaurants.aggregate([
 {
-$group:{
-_id:"$cuisine",
-count:{$sum:1}
-}
+$group:{_id:"$cuisine", count:{$sum:1}}
 },
-{
-$match:{
-count:{$gt:1}
-}
-}
+{$match:{count:{$gt:1}}}
 ])
