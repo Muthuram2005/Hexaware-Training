@@ -220,3 +220,46 @@ END //
 DELIMITER ;
 -- Execution
 CALL GetLowPerformers(10);
+
+-- INDEXES
+-- 1
+CREATE INDEX idx_employee_id
+ON attendance(employee_id);
+
+SHOW INDEX FROM attendance
+WHERE Key_name = 'idx_employee_id';
+
+-- 2
+CREATE INDEX idx_department
+ON employees(department);
+
+SHOW INDEX FROM employees
+WHERE Key_name = 'idx_department';
+
+-- 3
+CREATE INDEX idx_task_employee
+ON tasks(employee_id);
+
+SHOW INDEX FROM tasks
+WHERE Key_name = 'idx_task_employee';
+
+-- 4
+CREATE INDEX idx_attendance_date
+ON attendance(attendance_date);
+
+SHOW INDEX FROM attendance
+WHERE Key_name = 'idx_attendance_date';
+
+-- 5
+CREATE INDEX idx_task_date
+ON tasks(task_date);
+
+SHOW INDEX FROM tasks
+WHERE Key_name = 'idx_task_date';
+
+-- 6
+CREATE INDEX idx_employee_department
+ON employees(employee_id, department);
+
+SHOW INDEX FROM employees
+WHERE Key_name = 'idx_employee_department';
