@@ -241,3 +241,46 @@ END //
 DELIMITER ;
 -- Execution
 CALL GetSalesByRegion('South');
+
+-- INDEXES
+-- 1
+CREATE INDEX idx_product
+ON sales(product_id);
+
+SHOW INDEX FROM sales
+WHERE Key_name = 'idx_product';
+
+-- 2
+CREATE INDEX idx_region
+ON stores(region);
+
+SHOW INDEX FROM stores
+WHERE Key_name = 'idx_region';
+
+-- 3
+CREATE INDEX idx_store
+ON sales(store_id);
+
+SHOW INDEX FROM sales
+WHERE Key_name = 'idx_store';
+
+-- 4
+CREATE INDEX idx_sale_date
+ON sales(sale_date);
+
+SHOW INDEX FROM sales
+WHERE Key_name = 'idx_sale_date';
+
+-- 5
+CREATE INDEX idx_employee_store
+ON employees(store_id);
+
+SHOW INDEX FROM employees
+WHERE Key_name = 'idx_employee_store';
+
+-- 6
+CREATE INDEX idx_product_store
+ON sales(product_id, store_id);
+
+SHOW INDEX FROM sales
+WHERE Key_name = 'idx_product_store';
