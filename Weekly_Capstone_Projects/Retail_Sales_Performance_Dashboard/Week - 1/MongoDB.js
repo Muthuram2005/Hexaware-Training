@@ -1,7 +1,7 @@
 // DATABASE
 use RetailSalesDB
  
-// campaign_feedback TABLE
+// campaign_feedback COLLECTION
 db.createCollection("campaign_feedback")
 
 // CRUD
