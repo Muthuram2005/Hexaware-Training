@@ -38,7 +38,10 @@ df["productivity_score"] = np.where(df["effective_work_hours"] > 0,np.round(df["
 df["attendance_status"] = np.where(df["absent_days"] > 0, "Absent", "Present")
 
 # Top performers
-top_performers = ( df.groupby("employee_name")["productivity_score"].mean().sort_values(ascending=False).head(10))
+top_performers = (df.groupby("employee_name")["productivity_score"].mean().sort_values(ascending=False).head(10))
+
+# Bottom performers
+bottom_performers = (df.groupby("employee_name")["productivity_score"].mean().sort_values(ascending=True).head(10))
 
 # Frequent absentees
 frequent_absentees = (df.groupby("employee_name")["absent_days"].sum().sort_values(ascending=False).head(10))
@@ -55,6 +58,9 @@ department_summary = (df.groupby("department")
 # OUTPUT 
 print("\n========== TOP PERFORMERS ==========")
 print(top_performers)
+
+print("\n========== BOTTOM PERFORMERS ==========")
+print(bottom_performers)
 
 print("\n========== FREQUENT ABSENTEES ==========")
 print(frequent_absentees)
