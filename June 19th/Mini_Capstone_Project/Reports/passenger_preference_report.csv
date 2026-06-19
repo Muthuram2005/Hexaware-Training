@@ -1,0 +1,21 @@
+passenger_name,meal,seat,extra_baggage
+Rahul Sharma,Veg,Window,True
+Priya Reddy,Non-Veg,Aisle,False
+Amit Kumar,Veg,Middle,False
+Sneha Patel,Jain,Window,True
+Farhan Ali,Non-Veg,Aisle,False
+Neha Singh,Veg,Window,True
+Arjun Verma,Veg,Middle,False
+Meera Nair,Jain,Window,True
+Kiran Rao,Veg,Aisle,False
+Nisha Reddy,Non-Veg,Window,True
+David Thomas,Veg,Middle,False
+Ayesha Khan,Jain,Window,True
+Rohit Sharma,Veg,Aisle,False
+Pooja Mehta,Non-Veg,Window,True
+Sanjay Gupta,Veg,Middle,False
+Divya Iyer,Jain,Window,True
+Vikram Singh,,,
+Anjali Rao,,,
+Faiz Ahmed,,,
+Megha Kapoor,,,

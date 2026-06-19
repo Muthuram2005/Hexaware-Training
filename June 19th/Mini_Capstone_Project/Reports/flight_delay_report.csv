@@ -1,0 +1,21 @@
+flight_id,airline,status,delay_flag
+F101,Indigo,On Time,No
+F101,Indigo,On Time,No
+F102,Air India,Delayed,Yes
+F103,Vistara,On Time,No
+F104,Indigo,Cancelled,No
+F105,Air India,On Time,No
+F106,Akasa,Delayed,Yes
+F107,Vistara,On Time,No
+F108,Indigo,On Time,No
+F109,Akasa,Delayed,Yes
+F110,Air India,On Time,No
+F111,Indigo,On Time,No
+F112,Vistara,Cancelled,No
+F113,Akasa,On Time,No
+F114,Air India,Delayed,Yes
+F115,Indigo,On Time,No
+F101,Indigo,On Time,No
+F103,Vistara,On Time,No
+F107,Vistara,On Time,No
+F110,Air India,On Time,No
