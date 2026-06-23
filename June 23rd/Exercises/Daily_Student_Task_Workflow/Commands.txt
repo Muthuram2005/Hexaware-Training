@@ -1,7 +1,6 @@
 docker run -d -p 8080:8080 --name airflow apache/airflow standalone
 docker ps
 docker logs airflow
-clear
 docker exec -it airflow bash
 cd /opt/airflow/dags
 cat > student_daily_tasks_dag.py
