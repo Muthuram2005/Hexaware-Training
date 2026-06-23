@@ -1,0 +1,16 @@
+employee_id,employee_name,department,attendance_date,clock_in,clock_out,status
+101,John Smith,IT,2026-06-01,09:00:00,18:00:00,Present
+102,Alice Johnson,HR,2026-06-01,09:15:00,17:45:00,Present
+103,Michael Brown,Finance,2026-06-01,08:50:00,17:30:00,Present
+104,Sarah Davis,Sales,2026-06-01,09:05:00,18:15:00,Present
+105,David Wilson,IT,2026-06-01,09:30:00,18:00:00,Present
+106,Emma Taylor,HR,2026-06-01,,,Absent
+107,James Anderson,Finance,2026-06-01,09:10:00,17:40:00,Present
+108,Olivia Thomas,Sales,2026-06-01,08:55:00,18:10:00,Present
+109,William Martin,IT,2026-06-01,,,Absent
+110,Sophia Lee,HR,2026-06-01,09:00:00,17:30:00,Present
+111,Daniel White,Finance,2026-06-01,09:20:00,18:00:00,Present
+112,Isabella Harris,Sales,2026-06-01,09:00:00,18:20:00,Present
+113,Matthew Clark,IT,2026-06-01,08:45:00,17:45:00,Present
+114,Mia Lewis,HR,2026-06-01,09:05:00,18:00:00,Present
+115,Ethan Walker,Finance,2026-06-01,,,Absent
