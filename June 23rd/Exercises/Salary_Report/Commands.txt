@@ -1,0 +1,13 @@
+docker run -d -p 8080:8080 --name airflow apache/airflow standalone
+docker ps
+docker logs airflow
+clear
+docker exec -it airflow bash
+cd /opt/airflow/dags
+cat > salary_report.py
+ctrl+d 
+ls
+airflow config get-value core dags_folder
+airflow dags list-import-errors
+airflow dags reserialize
+airflow dags list
