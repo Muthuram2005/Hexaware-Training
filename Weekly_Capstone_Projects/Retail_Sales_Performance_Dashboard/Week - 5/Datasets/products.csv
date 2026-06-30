@@ -1,0 +1,11 @@
+product_id,product_name,category,cost_price,selling_price
+P101,Laptop,Electronics,50000,65000
+P102,Smartphone,Electronics,20000,28000
+P103,Headphones,Accessories,1200,1800
+P104,Keyboard,Accessories,700,1200
+P105,Mouse,Accessories,400,800
+P106,Monitor,Electronics,7000,9500
+P107,Printer,Office,6000,8500
+P108,Tablet,Electronics,15000,21000
+P109,Speaker,Accessories,1800,2600
+P110,Webcam,Accessories,900,1600
