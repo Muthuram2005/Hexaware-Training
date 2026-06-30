@@ -1,0 +1,31 @@
+employee_id,project_name,tasks_assigned,tasks_completed,pending_tasks,overtime_hours,quality_score,task_status
+101,Payroll System,25,22,3,2.0,92,Completed
+102,Budget Report,20,18,2,1.5,89,Completed
+103,Cloud Migration,20,15,5,3.0,80,In Progress
+104,Recruitment Drive,22,19,3,1.0,88,Completed
+105,Sales Campaign,18,10,8,0.5,72,Delayed
+106,Security Upgrade,28,26,2,4.0,96,Completed
+107,Financial Audit,18,14,4,2.5,78,In Progress
+108,Client Follow-up,15,12,3,1.0,81,Completed
+109,Training Program,24,21,3,2.0,91,Completed
+110,API Development,26,24,2,3.5,95,Completed
+111,Marketing Survey,20,17,3,1.5,85,Completed
+112,Inventory Check,22,20,2,2.0,90,Completed
+113,Tax Filing,25,23,2,2.5,94,Completed
+114,Product Demo,18,13,5,1.0,76,In Progress
+115,Data Warehouse,30,28,2,4.5,98,Completed
+116,HR Documentation,20,16,4,1.5,82,In Progress
+117,Social Campaign,21,18,3,2.0,87,Completed
+118,Accounts Review,24,22,2,2.5,93,Completed
+119,Warehouse Audit,28,25,3,3.0,95,Completed
+120,Lead Generation,18,11,7,0.5,70,Delayed
+121,Automation Project,32,30,2,5.0,99,Completed
+122,Policy Review,22,19,3,1.5,88,Completed
+123,SEO Optimization,24,21,3,2.0,90,Completed
+124,Expense Analysis,18,9,9,0.0,65,Delayed
+125,Logistics Planning,26,24,2,3.0,96,Completed
+126,Customer Outreach,18,14,4,1.0,79,In Progress
+127,AI Integration,30,27,3,4.0,97,Completed
+128,Employee Welfare,22,20,2,2.0,91,Completed
+129,Brand Promotion,20,15,5,1.5,77,In Progress
+130,Operations Review,28,26,2,3.5,95,Completed
