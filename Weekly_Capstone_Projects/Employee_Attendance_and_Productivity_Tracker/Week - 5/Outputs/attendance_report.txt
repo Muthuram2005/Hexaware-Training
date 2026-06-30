@@ -1,0 +1,20 @@
+EMPLOYEE ATTENDANCE REPORT
+
+TOP 5 ABSENTEES
+--------------------------
+employee_id  employee_name
+124          Xavier           6
+105          Eva              5
+120          Tina             5
+129          Catherine        4
+116          Peter            4
+
+LOWEST PRODUCTIVITY DEPARTMENTS
+--------------------------
+department
+Sales         1.491764
+Finance       2.189936
+Marketing     2.193981
+HR            2.431246
+IT            2.883168
+Operations    2.895899
