@@ -1,0 +1,11 @@
+Epic - Customer Service
+│
+├── Issue - Customer Support Ticket Management
+│   ├── Task - Create Support Ticket Form
+│   ├── Task - Implement Ticket Status Tracking
+│   └── Task - Send Ticket Update Notifications
+│
+└── Issue - Live Chat & Help Center
+    ├── Task - Develop Live Chat Interface
+    ├── Task - Build Help Center Knowledge Base
+    └── Task - Implement Smart Article Suggestions
