@@ -1,0 +1,11 @@
+Epic - Amazon Payment Screen
+│
+├── Issue - Payment Method Selection
+│   ├── Task - Design Payment Method UI
+│   ├── Task - Display Credit/Debit Card Option
+│   └── Task - Display UPI Option
+│
+└── Issue - Card Payment
+    ├── Task - Create Card Details Form
+    ├── Task - Validate Card Number
+    └── Task - Mask Card Information
